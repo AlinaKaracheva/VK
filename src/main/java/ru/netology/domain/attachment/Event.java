@@ -7,8 +7,8 @@ public class Event {
     private boolean isFavorite;
     private String address;
     private String text;
-    private String buttonText;
-    private int friends;
+    private String snippetButton;
+    private int friendsIdList;
 
     public int getId() {
         return id;
@@ -59,18 +59,18 @@ public class Event {
     }
 
     public String getButtonText() {
-        return buttonText;
+        return snippetButton;
     }
 
     public void setButtonText(String buttonText) {
-        this.buttonText = buttonText;
+        this.snippetButton = snippetButton;
     }
 
     public int getFriends() {
-        return friends;
+        return friendsIdList;
     }
 
     public void setFriends(int friends) {
-        this.friends = friends;
+        this.friendsIdList = friendsIdList;
     }
 }

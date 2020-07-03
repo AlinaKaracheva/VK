@@ -20,13 +20,22 @@ public class Post {
     private int markedAsAds;
     private boolean isFavorite;
     private int postponedId;
+    private int count;
+    private int canPost;
+    private int groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
+    private int userLikes;
+    private int canLike;
+    private int canPublish;
     private Place place;
     private PostSource postSource;
-    private LikesInfo likesInfo;
+    private LikesUsersInfo likesUsersInfo;
     private RepostsInfo repostsInfo;
     private CommentsInfo commentsInfo;
     private ViewsInfo viewsInfo;
     private Geo geo;
+
 
     public int getId() {
         return id;
@@ -180,6 +189,70 @@ public class Post {
         this.postponedId = postponedId;
     }
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getCanPost() {
+        return canPost;
+    }
+
+    public void setCanPost(int canPost) {
+        this.canPost = canPost;
+    }
+
+    public int getGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(int groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
+
+    public int getUserLikes() {
+        return userLikes;
+    }
+
+    public void setUserLikes(int userLikes) {
+        this.userLikes = userLikes;
+    }
+
+    public int getCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(int canLike) {
+        this.canLike = canLike;
+    }
+
+    public int getCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(int canPublish) {
+        this.canPublish = canPublish;
+    }
+
     public Place getPlace() {
         return place;
     }
@@ -196,12 +269,12 @@ public class Post {
         this.postSource = postSource;
     }
 
-    public LikesInfo getLikesInfo() {
-        return likesInfo;
+    public LikesUsersInfo getLikesUsersInfo() {
+        return likesUsersInfo;
     }
 
-    public void setLikesInfo(LikesInfo likesInfo) {
-        this.likesInfo = likesInfo;
+    public void setLikesInfo(LikesUsersInfo likesUsersInfo) {
+        this.likesUsersInfo = likesUsersInfo;
     }
 
     public RepostsInfo getRepostsInfo() {

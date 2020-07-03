@@ -1,7 +1,7 @@
 package ru.netology.domain.attachment;
 
-public class PhotosList {
-    private PhotosList[] photoId() {
+public class PhotosListId {
+    private PhotosListId[] getPhotos() {
         return null;
     }
 }

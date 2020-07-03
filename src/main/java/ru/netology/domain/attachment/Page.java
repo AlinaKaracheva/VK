@@ -9,12 +9,12 @@ public class Page {
     private int currentUserCanEditAccess;
     private int whoCanView;
     private int whoCanEdit;
-    private int edited;
-    private int created;
+    private int lastModifiedDate;
+    private int dateOfCreation;
     private int editorId;
     private int views;
-    private String parent;
-    private String parent2;
+    private String parentPageForNavigation;
+    private String parentPageForNavigation2;
     private String source;
     private String html;
     private String viewUrl;
@@ -83,20 +83,20 @@ public class Page {
         this.whoCanEdit = whoCanEdit;
     }
 
-    public int getEdited() {
-        return edited;
+    public int getLastModifiedDate() {
+        return lastModifiedDate;
     }
 
-    public void setEdited(int edited) {
-        this.edited = edited;
+    public void setLastModifiedDate(int lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 
-    public int getCreated() {
-        return created;
+    public int getDateOfCreation() {
+        return dateOfCreation;
     }
 
-    public void setCreated(int created) {
-        this.created = created;
+    public void setDateOfCreation(int dateOfCreation) {
+        this.dateOfCreation = dateOfCreation;
     }
 
     public int getEditorId() {
@@ -115,20 +115,20 @@ public class Page {
         this.views = views;
     }
 
-    public String getParent() {
-        return parent;
+    public String getParentPageForNavigation() {
+        return parentPageForNavigation;
     }
 
-    public void setParent(String parent) {
-        this.parent = parent;
+    public void setParentPageForNavigation(String parentPageForNavigation) {
+        this.parentPageForNavigation = parentPageForNavigation;
     }
 
-    public String getParent2() {
-        return parent2;
+    public String getParentPageForNavigation2() {
+        return parentPageForNavigation2;
     }
 
-    public void setParent2(String parent2) {
-        this.parent2 = parent2;
+    public void setParentPageForNavigation2(String parentPageForNavigation2) {
+        this.parentPageForNavigation2 = parentPageForNavigation2;
     }
 
     public String getSource() {

@@ -22,13 +22,13 @@ public class Video {
     private int comments;
     private String player;
     private String platform;
-    private int canEdit;
-    private int canAdd;
-    private int isPrivate;
+    private boolean canEdit;
+    private boolean canAdd;
+    private boolean isPrivate;
     private String accessKey;
-    private int processing;
-    private int live;
-    private int upcoming;
+    private boolean processing;
+    private boolean live;
+    private boolean upcoming;
     private boolean isFavorite;
 
     public int getId() {
@@ -199,28 +199,28 @@ public class Video {
         this.platform = platform;
     }
 
-    public int getCanEdit() {
+    public boolean isCanEdit() {
         return canEdit;
     }
 
-    public void setCanEdit(int canEdit) {
+    public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
 
-    public int getCanAdd() {
+    public boolean isCanAdd() {
         return canAdd;
     }
 
-    public void setCanAdd(int canAdd) {
+    public void setCanAdd(boolean canAdd) {
         this.canAdd = canAdd;
     }
 
-    public int getIsPrivate() {
+    public boolean isPrivate() {
         return isPrivate;
     }
 
-    public void setIsPrivate(int isPrivate) {
-        this.isPrivate = isPrivate;
+    public void setPrivate(boolean aPrivate) {
+        isPrivate = aPrivate;
     }
 
     public String getAccessKey() {
@@ -231,27 +231,27 @@ public class Video {
         this.accessKey = accessKey;
     }
 
-    public int getProcessing() {
+    public boolean isProcessing() {
         return processing;
     }
 
-    public void setProcessing(int processing) {
+    public void setProcessing(boolean processing) {
         this.processing = processing;
     }
 
-    public int getLive() {
+    public boolean isLive() {
         return live;
     }
 
-    public void setLive(int live) {
+    public void setLive(boolean live) {
         this.live = live;
     }
 
-    public int getUpcoming() {
+    public boolean isUpcoming() {
         return upcoming;
     }
 
-    public void setUpcoming(int upcoming) {
+    public void setUpcoming(boolean upcoming) {
         this.upcoming = upcoming;
     }
 
