@@ -1,10 +1,37 @@
 package ru.netology.domain;
 
 public class CommentsInfo {
+    private String commenterName;
+    private int commentDate;
+    private String commentText;
     private int sorting;
     private int likes;
     private boolean delete;
     private boolean reply;
+
+    public String getCommenterName() {
+        return commenterName;
+    }
+
+    public void setCommenterName(String commenterName) {
+        this.commenterName = commenterName;
+    }
+
+    public int getCommentDate() {
+        return commentDate;
+    }
+
+    public void setCommentDate(int commentDate) {
+        this.commentDate = commentDate;
+    }
+
+    public String getCommentText() {
+        return commentText;
+    }
+
+    public void setCommentText(String commentText) {
+        this.commentText = commentText;
+    }
 
     public int getSorting() {
         return sorting;
